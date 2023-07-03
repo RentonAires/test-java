@@ -77,9 +77,10 @@ class ClienteServiceTeste {
 
     @Test
     void deletarClientePorId() {
-        Cliente clienteMock = new Cliente( 1L,"renato", 200.0 );
+        //Cliente clienteMock = new Cliente( 1L,"renato", 200.0 );
+
         Boolean clienteResposta = clienteService.deletarClientePorId(1L);
-        assertNotNull(clienteResposta);
+        assertTrue(clienteResposta);
         assertTrue(clienteResposta);
     }
 }

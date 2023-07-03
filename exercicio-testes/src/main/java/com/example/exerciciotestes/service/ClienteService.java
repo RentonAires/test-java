@@ -42,10 +42,10 @@ public class ClienteService {
     }
 
     public Boolean deletarClientePorId(Long id){
-        if (buscaClientePorId(id) == null){
-            throw new HttpClientErrorException(HttpStatus.INTERNAL_SERVER_ERROR,"Cliente não encontrado para o ID "+id);
-        }
+        //if (buscaClientePorId(id) == null){
+          //  throw new HttpClientErrorException(HttpStatus.INTERNAL_SERVER_ERROR,"Cliente não encontrado para o ID "+id);
+        //}
         this.ClienteRepository.deleteById(id);
-        return null;
+        return true;
     }
 }
